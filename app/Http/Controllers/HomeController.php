@@ -60,6 +60,7 @@ class HomeController extends Controller
      */
     public function show(Post $post)
     {
+        $post->categories->name;
         return view('show', compact('post'));
     }
 
